@@ -112,5 +112,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-. ~/dotfiles/bash_profile.d/bash_profile
-. ~/dotfiles/bash_profile.d/*.sh
+for file in $(find ~/dotfiles/bash_profile.d/ -mindepth 1); do
+  . $file
+done
