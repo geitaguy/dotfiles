@@ -1,0 +1,11 @@
+EDITOR="atom"
+alias nano='nano -EiT 2'
+alias grep='grep --color=auto'
+alias ls='ls -aFGh --color=auto'
+alias screen='screen -DR'
+
+reload(){
+  . ~/.bashrc
+}
+
+. /var/docker/docker-commands.sh
